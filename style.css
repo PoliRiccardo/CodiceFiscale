@@ -1,0 +1,73 @@
+#rettangolo {
+    width: 300px; /* Larghezza del rettangolo */
+    height: 350px; /* Altezza del rettangolo */
+    background-color:rgb(0, 0, 0); /* Colore di riempimento del rettangolo */
+    border-radius: 10px; /* Bordo arrotondato */
+    position: absolute; /* Posizionamento assoluto */
+    top: 25%; /* Posiziona il rettangolo al centro verticalmente */
+    left: 50%; /* Posiziona il rettangolo al centro orizzontalmente */
+    transform: translate(-50%, -50%); /* Centra il rettangolo esattamente */
+  }
+#p_nome {
+    position: relative; /* Posizionamento assoluto */
+    left: 10%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+#p_cognome {
+    position: relative;
+    left: 10%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+  }
+#p_data{
+    position: relative;
+    left: 10%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+  }
+#genere{
+    position: relative;
+    left: 5%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+  }
+#p_comuni{
+    position: relative;
+    left:10%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+
+   
+}
+#btn{
+    position: relative;
+    left:39%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#titolo {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+#carta{
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+
+}

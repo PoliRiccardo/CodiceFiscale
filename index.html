@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolo codice fiscale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="rettangolo">
+        <h2 id ="titolo" >codice fiscale online</h2>
+        <form>
+            <p id="p_nome">nome 
+                <input type="text" id="nome" required pattern="[A-Z]*">
+            </p>
+            <p id="p_cognome">cognome 
+                <input type="text" id="cognome" required pattern="[A-Z]*" >
+            </p>
+            <p id="p_data"> 
+                <label for="calendar">data di nascita: </label>
+                <input type="date" id="calendar" min="1940-01-01">    
+            </p>
+            <p id="p_sesso"> 
+                <fieldset id="genere">sesso:
+                    <style>
+                        fieldset {
+                            border: 0;
+                        }
+                    </style>
+                    <input type="radio" value="maschio" name="sesso" id="maschio">
+                    <label for="maschio">maschio</label>
+                    <input type="radio" value="femmina" name="sesso" id="femmina">
+                    <label for="femmina">femmina</label>
+                </fieldset>
+            </p>
+            <p id ="p_comuni">
+                <label for="comuni">comune: </label>
+                <select id="comuni">
+                    <option value="Acquafredda">Acquafredda</option>
+        <option value="Adro">Adro</option>
+        <option value="Agnosine">Agnosine</option>
+        <option value="Alfianello">Alfianello</option>
+        <option value="Anfo">Anfo</option>
+        <option value="Angolo Terme">Angolo Terme</option>
+        <option value="Artogne">Artogne</option>
+        <option value="Azzano Mella">Azzano Mella</option>
+        <option value="Bagnolo Mella">Bagnolo Mella</option>
+        <option value="Bagolino">Bagolino</option>
+        <option value="Barbariga">Barbariga</option>
+        <option value="Barghe">Barghe</option>
+        <option value="Bassano Bresciano">Bassano Bresciano</option>
+        <option value="Bedizzole">Bedizzole</option>
+        <option value="Berlingo">Berlingo</option>
+        <option value="Berzo Demo">Berzo Demo</option>
+        <option value="Berzo Inferiore">Berzo Inferiore</option>
+        <option value="Bienno">Bienno</option>
+        <option value="Bione">Bione</option>
+        <option value="Borgo San Giacomo">Borgo San Giacomo</option>
+        <option value="Borgosatollo">Borgosatollo</option>
+        <option value="Borno">Borno</option>
+        <option value="Botticino">Botticino</option>
+        <option value="Bovegno">Bovegno</option>
+        <option value="Bovezzo">Bovezzo</option>
+        <option value="Brandico">Brandico</option>
+        <option value="Braone">Braone</option>
+        <option value="Breno">Breno</option>
+        <option value="Brescia">Brescia</option>
+        <option value="Brione">Brione</option>
+        <option value="Caino">Caino</option>
+        <option value="Calcinato">Calcinato</option>
+        <option value="Calvagese della Riviera">Calvagese della Riviera</option>
+        <option value="Calvisano">Calvisano</option>
+        <option value="Capo di Ponte">Capo di Ponte</option>
+        <option value="Capovalle">Capovalle</option>
+        <option value="Capriano del Colle">Capriano del Colle</option>
+        <option value="Capriolo">Capriolo</option>
+        <option value="Carpenedolo">Carpenedolo</option>
+        <option value="Castegnato">Castegnato</option>
+        <option value="Castel Mella">Castel Mella</option>
+        <option value="Castelcovati">Castelcovati</option>
+        <option value="Castenedolo">Castenedolo</option>
+        <option value="Casto">Casto</option>
+        <option value="Castrezzato">Castrezzato</option>
+        <option value="Cazzago San Martino">Cazzago San Martino</option>
+        <option value="Cedegolo">Cedegolo</option>
+        <option value="Cellatica">Cellatica</option>
+        <option value="Cerveno">Cerveno</option>
+        <option value="Ceto">Ceto</option>
+        <option value="Cevo">Cevo</option>
+        <option value="Chiari">Chiari</option>
+        <option value="Cigole">Cigole</option>
+        <option value="Cimbergo">Cimbergo</option>
+        <option value="Cividate Camuno">Cividate Camuno</option>
+        <option value="Coccaglio">Coccaglio</option>
+        <option value="Collebeato">Collebeato</option>
+        <option value="Collio">Collio</option>
+        <option value="Cologne">Cologne</option>
+        <option value="Comezzano-Cizzago">Comezzano-Cizzago</option>
+        <option value="Concesio">Concesio</option>
+        <option value="Corte Franca">Corte Franca</option>
+        <option value="Corteno Golgi">Corteno Golgi</option>
+        <option value="Corzano">Corzano</option>
+        <option value="Darfo Boario Terme">Darfo Boario Terme</option>
+        <option value="Dello">Dello</option>
+        <option value="Desenzano del Garda">Desenzano del Garda</option>
+        <option value="Edolo">Edolo</option>
+        <option value="Erbusco">Erbusco</option>
+        <option value="Esine">Esine</option>
+        <option value="Fiesse">Fiesse</option>
+        <option value="Flero">Flero</option>
+        <option value="Gambara">Gambara</option>
+        <option value="Gardone Riviera">Gardone Riviera</option>
+        <option value="Gardone Val Trompia">Gardone Val Trompia</option>
+        <option value="Gargnano">Gargnano</option>
+        <option value="Gavardo">Gavardo</option>
+        <option value="Ghedi">Ghedi</option>
+        <option value="Gianico">Gianico</option>
+        <option value="Gottolengo">Gottolengo</option>
+        <option value="Gussago">Gussago</option>
+        <option value="Idro">Idro</option>
+        <option value="Incudine">Incudine</option>
+        <option value="Irma">Irma</option>
+        <option value="Iseo">Iseo</option>
+        <option value="Isorella">Isorella</option>
+        <option value="Lavenone">Lavenone</option>
+        <option value="Leno">Leno</option>
+        <option value="Limone sul Garda">Limone sul Garda</option>
+        <option value="Lodrino">Lodrino</option>
+        <option value="Lograto">Lograto</option>
+        <option value="Lonato del Garda">Lonato del Garda</option>
+        <option value="Longhena">Longhena</option>
+        <option value="Losine">Losine</option>
+        <option value="Lozio">Lozio</option>
+        <option value="Lumezzane">Lumezzane</option>
+        <option value="Maclodio">Maclodio</option>
+        <option value="Magasa">Magasa</option>
+        <option value="Mairano">Mairano</option>
+        <option value="Malegno">Malegno</option>
+        <option value="Malonno">Malonno</option>
+        <option value="Manerba del Garda">Manerba del Garda</option>
+        <option value="Manerbio">Manerbio</option>
+        <option value="Marcheno">Marcheno</option>
+        <option value="Marmentino">Marmentino</option>
+        <option value="Marone">Marone</option>
+        <option value="Mazzano">Mazzano</option>
+        <option value="Milzano">Milzano</option>
+        <option value="Moniga del Garda">Moniga del Garda</option>
+        <option value="Monno">Monno</option>
+        <option value="Monte Isola">Monte Isola</option>
+        <option value="Monticelli Brusati">Monticelli Brusati</option>
+        <option value="Montichiari">Montichiari</option>
+        <option value="Montirone">Montirone</option>
+        <option value="Mura">Mura</option>
+        <option value="Muscoline">Muscoline</option>
+        <option value="Nave">Nave</option>
+        <option value="Niardo">Niardo</option>
+        <option value="Nuvolento">Nuvolento</option>
+        <option value="Nuvolera">Nuvolera</option>
+        <option value="Odolo">Odolo</option>
+        <option value="Offlaga">Offlaga</option>
+        <option value="Ome">Ome</option>
+        <option value="Ono San Pietro">Ono San Pietro</option>
+        <option value="Orzinuovi">Orzinuovi</option>
+        <option value="Orzivecchi">Orzivecchi</option>
+        <option value="Ospitaletto">Ospitaletto</option>
+        <option value="Ossimo">Ossimo</option>
+        <option value="Padenghe sul Garda">Padenghe sul Garda</option>
+        <option value="Paderno Franciacorta">Paderno Franciacorta</option>
+        <option value="Paisco Loveno">Paisco Loveno</option>
+        <option value="Paitone">Paitone</option>
+        <option value="Palazzolo sull'Oglio">Palazzolo sull'Oglio</option>
+        <option value="Paratico">Paratico</option>
+        <option value="Paspardo">Paspardo</option>
+        <option value="Passirano">Passirano</option>
+        <option value="Pavone del Mella">Pavone del Mella</option>
+        <option value="Pertica Alta">Pertica Alta</option>
+        <option value="Pertica Bassa">Pertica Bassa</option>
+        <option value="Pezzaze">Pezzaze</option>
+        <option value="Pian Camuno">Pian Camuno</option>
+        <option value="Piancogno">Piancogno</option>
+        <option value="Pisogne">Pisogne</option>
+        <option value="Polaveno">Polaveno</option>
+        <option value="Polpenazze del Garda">Polpenazze del Garda</option>
+        <option value="Pompiano">Pompiano</option>
+        <option value="Poncarale">Poncarale</option>
+        <option value="Ponte di Legno">Ponte di Legno</option>
+        <option value="Pontevico">Pontevico</option>
+        <option value="Pontoglio">Pontoglio</option>
+        <option value="Pozzolengo">Pozzolengo</option>
+        <option value="Pralboino">Pralboino</option>
+        <option value="Preseglie">Preseglie</option>
+        <option value="Prestine">Prestine</option>
+        <option value="Prevalle">Prevalle</option>
+        <option value="Provaglio d'Iseo">Provaglio d'Iseo</option>
+        <option value="Provaglio Val Sabbia">Provaglio Val Sabbia</option>
+        <option value="Puegnago sul Garda">Puegnago sul Garda</option>
+        <option value="Quinzano d'Oglio">Quinzano d'Oglio</option>
+        <option value="Remedello">Remedello</option>
+        <option value="Rezzato">Rezzato</option>
+        <option value="Roccafranca">Roccafranca</option>
+        <option value="Rodengo Saiano">Rodengo Saiano</option>
+        <option value="Roè Volciano">Roè Volciano</option>
+        <option value="Roncadelle">Roncadelle</option>
+        <option value="Rovato">Rovato</option>
+        <option value="Rudiano">Rudiano</option>
+        <option value="Sabbio Chiese">Sabbio Chiese</option>
+        <option value="Sale Marasino">Sale Marasino</option>
+        <option value="Salò">Salò</option>
+        <option value="San Felice del Benaco">San Felice del Benaco</option>
+        <option value="San Gervasio Bresciano">San Gervasio Bresciano</option>
+        <option value="San Paolo">San Paolo</option>
+        <option value="San Zeno Naviglio">San Zeno Naviglio</option>
+        <option value="Sarezzo">Sarezzo</option>
+        <option value="Saviore dell'Adamello">Saviore dell'Adamello</option>
+        <option value="Sellero">Sellero</option>
+        <option value="Seniga">Seniga</option>
+        <option value="Serle">Serle</option>
+        <option value="Sirmione">Sirmione</option>
+        <option value="Soiano del Lago">Soiano del Lago</option>
+        <option value="Sonico">Sonico</option>
+        <option value="Sulzano">Sulzano</option>
+        <option value="Tavernole sul Mella">Tavernole sul Mella</option>
+        <option value="Temù">Temù</option>
+        <option value="Tignale">Tignale</option>
+        <option value="Torbole Casaglia">Torbole Casaglia</option>
+        <option value="Toscolano-Maderno">Toscolano-Maderno</option>
+        <option value="Travagliato">Travagliato</option>
+        <option value="Tremosine">Tremosine</option>
+        <option value="Trenzano">Trenzano</option>
+        <option value="Treviso Bresciano">Treviso Bresciano</option>
+        <option value="Urago d'Oglio">Urago d'Oglio</option>
+        <option value="Vallio Terme">Vallio Terme</option>
+        <option value="Valvestino">Valvestino</option>
+        <option value="Verolanuova">Verolanuova</option>
+        <option value="Verolavecchia">Verolavecchia</option>
+        <option value="Vestone">Vestone</option>
+        <option value="Vezza d'Oglio">Vezza d'Oglio</option>
+        <option value="Villa Carcina">Villa Carcina</option>
+        <option value="Villachiara">Villachiara</option>
+        <option value="Villanuova sul Clisi">Villanuova sul Clisi</option>
+        <option value="Vione">Vione</option>
+        <option value="Visano">Visano</option>
+        <option value="Vobarno">Vobarno</option>
+        <option value="Zone">Zone</option>
+        
+                </select>
+            </p>
+ 
+        </form>
+        <button id="btn" onclick="generazioneCarta()">Genera</button>
+        <p id="carta"></p>
+        
+    </div>
+    <script src="main.js"></script>
+
+</body>
+</html>
